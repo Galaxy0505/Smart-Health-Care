@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../老人/styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 40px;">请选择您的身份：</h1>
+    <div style="display: flex;">
+        <div class="s2" id="old" onmouseover="this.className='overchange2'" onmouseout="this.className='s2'">老&nbsp;&nbsp;人</div>
+        <div class="s2" id="young" onmouseover="this.className='overchange2'" onmouseout="this.className='s2'">子&nbsp;&nbsp;女</div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var jumpold= document.getElementById('old');
+            jumpold.addEventListener('click', function() {
+            window.location.href = '../老人/home.html';
+            });
+            var jumpyoung= document.getElementById('young');
+            jumpyoung.addEventListener('click', function() {
+            window.location.href = '../子女/home.html';
+            });
+        });
+    </script>
+</body>
+</html>

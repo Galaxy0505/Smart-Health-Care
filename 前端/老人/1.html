@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jump to Page Example</title>
+<script>
+// 当文档加载完毕时执行
+document.addEventListener('DOMContentLoaded', function() {
+  // 获取需要点击的组件
+  var jumpButton = document.getElementById('jump-to-page');
+  
+  // 为组件添加点击事件监听器
+  jumpButton.addEventListener('click', function() {
+    // 设置新的页面地址
+    window.location.href = 'home.html';
+  });
+});
+</script>
+<style>
+    div{
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+    }
+</style>
+</head>
+<body>
+  <!-- 添加id为"jump-to-page"的按钮 -->
+  <div id="jump-to-page"></div>
+</body>
+</html>
+

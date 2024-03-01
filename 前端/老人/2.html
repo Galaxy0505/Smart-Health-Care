@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智慧健康守护</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 style="margin-top: 20px; height: 46px; text-align:center;font-size: 46px;">智&nbsp;&nbsp;慧&nbsp;&nbsp;健&nbsp;&nbsp;康&nbsp;&nbsp;守&nbsp;&nbsp;护&nbsp;&nbsp;<b style="font-size: 18px;text-align: center;">(老年版)</b></h1>
+      <nav>
+        <ul style="display: flex;">
+          <li id="home" class="nav-link">首 页</li>
+          <li id="education" class="nav-link active">教 育</li>
+          <li id="entertainment" class="nav-link">娱 乐</li>
+          <li id="health" class="nav-link">健 康</li>
+          <li id="callus" class="nav-link">联 系 我 们</li>
+        </ul>
+      </nav>
+    </header>
+      <div class="imgdiv">
+      <img class="imgtjq" onmousedown="this.className='imgchange'" onmouseup="this.className='imgtjq'" id="tjq" src="https://i1.hdslb.com/bfs/archive/360f89afe79a138ebbce51cbe7ec501cb4dff41c.png@672w_378h_1c_!web-search-common-cover.avif" alt="">
+      <strong class="imgtitle">16式太极拳</strong>
+      </div>
+      <section class="main-section" style="padding-bottom: 5px;">
+      <h2 class="text-large" style="text-align:center;margin-bottom: 0px;">欢迎来到我们的网站</h2>
+      <p class="highlight" style="text-align:center;margin-top: 12px;font-size: 18px;">这里是为老年人精心设计的网站，简单易用，充满乐趣！</p>
+    </section>
+    <footer>
+      <p style="font-size: 20px;">&copy; 智慧健康守护. 所有权利保留。</p>
+    </footer>
+  </div>
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var jumphome= document.getElementById('home');
+            jumphome.addEventListener('click', function() {
+            window.location.href = 'home.html';
+            });
+            var jumpeducation= document.getElementById('education');
+            jumpeducation.addEventListener('click', function() {
+            window.location.href = '2.html';
+            });
+            var jumpentertainment= document.getElementById('entertainment');
+            jumpentertainment.addEventListener('click', function() {
+            window.location.href = '3.html';
+            });
+            var jumphealth= document.getElementById('health');
+            jumphealth.addEventListener('click', function() {
+            window.location.href = '4.html';
+            });
+            var jumptjq= document.getElementById('tjq');
+            jumptjq.addEventListener('click', function() {
+            window.location.href = 'https://www.bilibili.com/video/BV1XZ4y1s71h?t=23.7';
+            });
+        });
+        
+  </script>
+</body>
+</html>

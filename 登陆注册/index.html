@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>老年友好型登录注册页面</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="content" class="div1">
+  <!-- 登录表单 -->
+  <div id="loginForm">
+    <h2>登录</h2>
+    <input type="text" id="username" placeholder="用户名" required>
+    <input type="password" id="password" placeholder="密码" required>
+    <button onclick="login()">登录</button>
+    <button onclick="requestVerificationCode()" style="margin-left: 10px;">发送验证码</button>
+  </div>
+  <!-- 注册表单 -->
+  <div id="registerForm" class="div1" style="display: none;">
+    <h2>注册</h2>
+    <input type="text" id="registerUsername" placeholder="用户名" required>
+    <input type="text" id="registerEmail" placeholder="邮箱" required>
+    <input type="password" id="registerPassword" placeholder="密码" required>
+    <input type="password" id="registerConfirmPassword" placeholder="确认密码" required>
+    <button onclick="register()">注册</button>
+    <button onclick="toggleLoginForm()" style="margin-left: 10px;">返回登录</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+

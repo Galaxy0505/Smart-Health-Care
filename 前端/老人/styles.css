@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1200px; /* 适应大多数平板和桌面显示器 */
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  nav ul li {
+    text-align:center;
+    font-size: 27px;
+    display: inline;
+    margin:20px 67.345px;
+  }
+
+  .main-section {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  .main-section h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  /* 大字体 */
+    .text-large {
+        font-size: 28px;
+    }
+    /* 高对比色 */
+    .highlight {
+        background-color: #ffebcd;
+    }
+    .s1{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(173, 216, 230);
+		border-radius: 50px;
+        margin: 30px 50px;
+    }
+    .overchange{
+        width: 200px;
+        height: 200px;
+		border-radius: 50px;
+        margin: 30px 50px;
+        background-color:rgb(173, 216, 230);
+        box-shadow: 8px 8px 18px rgba(0, 0, 0, 50%);
+        }
+        .s2{
+          width: 400px;
+          height: 400px;
+          background-color: rgb(173, 216, 230);
+      border-radius: 100px;
+          margin: 60px 100px;
+          text-align: center;
+          justify-content: center;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 400px;
+      }
+      .overchange2{
+        width: 400px;
+        height: 400px;
+		border-radius: 100px;
+        margin: 60px 100px;
+        background-color:rgb(173, 216, 230);
+        box-shadow: 16px 16px 36px rgba(0, 0, 0, 50%);
+        text-align: center;
+          justify-content: center;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 400px;
+        }
+  .nav-link {
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    position:relative;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    color: #e74c3c;
+  }
+  
+  .nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #e74c3c;
+    transition: width 0.5s;
+  }
+  
+  .nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+  }
+  
+  .imgtjq{
+    height: 180px;
+    width: auto;
+    padding: 20px;
+  }
+  .imgchange{
+    height: 200px;
+    width: auto;
+    padding:10px 0px;
+  }
+  .imgtitle{
+    width: 320px;
+    font-size: 20px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .imgdiv{
+    width: 355.55px;
+    height: 260px;
+    margin: 10px;
+    border:2px solid rgba(85, 85, 85, 0.634);
+  }
+  /* 移动端适配 */
+  @media (max-width: 768px) {
+    .nav-link {
+      padding: 10px;
+    }
+  }
+  
+  
+  
