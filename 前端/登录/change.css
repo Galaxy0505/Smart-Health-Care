@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background: #f3f3f3;
@@ -13,11 +14,14 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .item{
     width: 340px;
     height: 60px;
     background: #eeeeee;
+    border-radius: 5px; 
+    margin-bottom: 10px;
 }
 .item div{
     width: 170px;
@@ -33,23 +37,25 @@ body{
     width: 100%;
 }
 .content div{
-    margin: 20px 30px;
+    margin: 20px 0;
     display: none;
     text-align: left;
 }
 p{
     color: #4a4a4a;
-    margin-top: 30px;
-    margin-bottom: 6px;
+    margin-top: 10px;
+    margin-bottom: 4px;
     font-size: 15px;
 }
-.content input[type="text"], .content input[type="password"]{
-    width: 100%;
+.content input[type="text"], 
+.content input[type="password"]{
+    width: (100% - 22px);
     height: 40px;
     border-radius: 3px;
     border: 1px solid #adadad;
     padding: 0 10px;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 .content input[type="submit"]{
     margin-top: 40px;
@@ -60,8 +66,8 @@ p{
     border: 1px solid #adadad;
     background: #00dd60;
     cursor: pointer;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
+    letter-spacing: 2px;
+    
 }
 .active{
     background: white;
