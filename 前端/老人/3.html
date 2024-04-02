@@ -5,6 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>美观导航栏</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+  body {
+    font-family: Arial, sans-serif; 
+    padding: 0;
+    background-color: #f0f0f0; 
+  }
+  .navbar {
+    background-color: #333; 
+    padding: 10px 0;
+  }
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff; 
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+  }
+  .nav-link:hover {
+    background-color: #4CAF50; 
+  }
+  .active {
+    background-color: #4CAF50;
+  }
+</style>
 </head>
 <body>
 <nav class="navbar">
